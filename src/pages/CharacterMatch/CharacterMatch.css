@@ -1,0 +1,101 @@
+.game {
+  font-size: 50px;
+  padding: 15px;
+  background-color: rgb(72, 64, 64);
+  border: 3px solid var(--color-pink);
+  border-radius: 30px;
+}
+@keyframes bgChange {
+  0% {
+    color: var(--color-blue);
+  }
+  50% {
+    color: var(--color-green);
+  }
+  100% {
+    color: var(--color-pink);
+  }
+}
+.game > a {
+  animation: bgChange 3s infinite;
+  cursor: pointer;
+}
+.character-match {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+  width: 300px;
+  gap: 30px;
+  margin-bottom: 200px;
+}
+.filters {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  padding: 20px;
+}
+
+.character-match > h2 {
+  width: fit-content;
+  position: relative;
+  background-color: var(--color-yellow);
+  border-radius: 20px;
+  padding: 10px;
+  border: 3px solid black;
+}
+select {
+  font-size: 15px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: var(--color-pink);
+  border: 2px solid var(--color-green);
+  width: 150px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--color-dark);
+  padding: 20px;
+  border-radius: 20px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-green);
+  font-size: 25px;
+  text-align: center;
+  gap: 10px;
+}
+.form > button {
+  background-color: var(--color-green);
+  font-size: 23px;
+  padding: 10px;
+}
+.character-result {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-yellow);
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 20px;
+  border: 3px solid black;
+}
+.character-result > img {
+  border-radius: 40%;
+  border: 3px solid black;
+  width: 200px;
+}
+.info-text {
+  text-align: center;
+  width: 180px;
+}
+.info-text > h3 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}

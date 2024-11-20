@@ -1,0 +1,51 @@
+header {
+  width: 100svw;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 250px;
+  background-image: url('https://wallpapers.com/images/hd/galaxy-theme-rick-and-morty-4k-k655qsflz954fi06.jpg');
+  background-position: bottom;
+  background-size: 90%;
+}
+.header-container {
+  width: 80%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 50px;
+}
+.header-container > img {
+  max-width: 850px;
+  height: 250px;
+}
+@media only screen and (max-width: 860px) {
+  header {
+    max-height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100svw;
+  }
+  .header-container {
+    max-height: 150px;
+  }
+
+  .header-container > img {
+    width: 320px;
+    height: 110px;
+  }
+
+  .characters > .char-title {
+    font-size: 45px;
+    max-width: 300px;
+  }
+  .form {
+    flex-direction: column;
+  }
+  .character-match > h2 {
+    font-size: 30px;
+  }
+}

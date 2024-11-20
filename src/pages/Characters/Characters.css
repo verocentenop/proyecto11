@@ -1,0 +1,80 @@
+.characters {
+  display: flex;
+  width: 100svw;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100svh;
+  padding-top: 100px;
+}
+.char-title {
+  font-size: 50px;
+  max-width: 500px;
+  background-color: var(--color-dark);
+  padding: 20px;
+  border-radius: 30px;
+  border: 5px solid var(--color-yellow);
+  position: relative;
+  height: fit-content;
+}
+.div-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+  gap: 20px;
+}
+.character-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 100vw;
+  height: 100svh;
+  padding-top: 50px;
+}
+.info {
+  font-size: 35px;
+}
+.char-img > img {
+  border-radius: 40%;
+  width: 200px;
+}
+.character-card {
+  display: flex;
+  max-height: 300px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 500px;
+  background-color: var(--color-dark);
+  padding: 25px;
+  border-radius: 40px;
+  color: var(--color-yellow);
+  border: 3px solid var(--color-green);
+}
+.info > h4 {
+  color: var(--color-green);
+}
+.info > p > span {
+  color: var(--color-blue);
+}
+.div-title > button {
+  font-size: 25px;
+  width: fit-content;
+  padding: 15px;
+}
+@media only screen and (max-width: 830px) {
+  .character-card {
+    flex-direction: column;
+    max-width: 300px;
+    text-align: center;
+    max-height: fit-content;
+  }
+  .div-title {
+    max-width: 350px;
+  }
+}

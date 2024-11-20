@@ -1,0 +1,30 @@
+.pages {
+  padding: 50px;
+  position: relative;
+  bottom: 0px;
+}
+.button-container {
+  display: flex;
+  gap: 25px;
+  width: 200px;
+  height: 40px;
+  background-color: var(--color-pink);
+  padding: var(--padding-l);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  border-radius: 30px;
+  border: 2px solid yellow;
+}
+
+.button-container > button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-yellow);
+  font-size: 30px;
+}
+
+.button-container > button:disabled {
+  cursor: not-allowed;
+}
