@@ -31,6 +31,10 @@ const Characters = () => {
       })
   }, [id])
 
+   if (loading) {
+    return <Loading />;
+  }
+
   return (
     <>
       <div className='characters'>
